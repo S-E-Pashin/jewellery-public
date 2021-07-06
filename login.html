@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Сайт "jewellery"</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="fonts/CormorantGaramond-Bold.woff2" rel="preload" as="font" crossorigin="anonymous">
+  <link href="fonts/CormorantGaramond-Regular-Italic.woff2" rel="preload" as="font" crossorigin="anonymous">
+  <link href="fonts/CormorantGaramond-SemiBold.woff2" rel="preload" as="font" crossorigin="anonymous">
+  <link href="fonts/Poppins-Bold.woff2" rel="preload" as="font" crossorigin="anonymous">
+  <link href="fonts/Poppins-Medium.woff2" rel="preload" as="font" crossorigin="anonymous">
+  <link href="fonts/Poppins-Regular.woff2" rel="preload" as="font" crossorigin="anonymous">
+</head>
+<body class="body">
+<header class="header">
+  <div class="header__wrapper">
+    <button class="header__menu-switch" aria-label="Кнопка для открытия и закрытия меню">
+      <svg class="header__menu-icon" width="25" height="18" viewBox="0 0 25 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="img/sprite.svg#icon-menu-switch"></use>
+      </svg>
+    </button>
+    <form class="header__search search">
+      <label class="search__label" for="search-id">
+        <svg class="search__label-icon" width="14" height="14" viewBox="0 0 14 14" fill="" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="img/sprite.svg#icon-search"></use>
+        </svg>
+      </label>
+      <input class="search__input" type="search" name="search-name" id="search-id" placeholder="Type here to search">
+    </form>
+    <div class="header__logo">
+      <svg class="header__logo-icon" width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="img/sprite.svg#icon-logo-header"></use>
+      </svg>
+    </div>
+    <div class="header__cart-wrapper">
+
+      <a href="#" class="header__cart">
+        <svg class="header__cart-icon" width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="img/sprite.svg#icon-cart"></use>
+        </svg>
+        <span>Cart</span>
+      </a>
+      <span class="header__cart-counter">0</span>
+    </div>
+    <nav class="header__nav main-nav">
+      <ul class="main-nav__list main-nav__list-first">
+        <li class="main-nav__item"><a class="main-nav__link" href="#">What’s new</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="#">Chokers</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="#">Necklaces</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="#">Rings</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="#">Earrings</a></li>
+      </ul>
+
+      <ul class="main-nav__list main-nav__list-second">
+        <li class="main-nav__item"><a class="main-nav__link" href="#">About CH</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="#">Stores & Hours</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="main">
+  <h1 class="visually_hidden">Сайт "jewellery" вход в личный кабинет</h1>
+  <section class="login login--page" id="login">
+    <div class="login__wrapper">
+      <div class="login__button-wrapper">
+
+      </div>
+      <div class="login__area">
+        <div class="login__header">
+          <div class="login__heading">
+            <h3>Log In</h3>
+          </div>
+
+        </div>
+        <form class="login__body" method="post" action="https://echo.htmlacademy.ru">
+          <div class="login__user-wrapper">
+            <div class="login__field">
+              <label for="login-id-email" class="login__label visually_hidden">Поле для ввода электронной почты</label>
+              <input class="login__input login__input-email" type="email" name="login-name-email" placeholder="Your E-mail" id="login-id-email" required="">
+            </div>
+
+            <div class="login__field login__field-password">
+              <label for="login-id-password" class="visually_hidden">Поле для ввода телефона</label>
+              <input type="password" name="login-name-password" placeholder="Password" id="login-id-password" required="">
+              <div class="login__password-link">
+                <a href="#">Forgot your password?</a>
+              </div>
+            </div>
+          </div>
+          <button class="login__button-submit" type="submit" aria-label="Нажмите для того что бы мы смогли с вами связаться">
+            Log In
+          </button>
+        </form>
+        <div class="login__footer">
+          <div class="login__footer-text">
+            <p>Don’t have an account?</p>
+          </div>
+          <div class="login__footer-link">
+            <a href="#">Sign up</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="footer__wrapper">
+    <div class="footer__header">
+      <div class="footer__heading">
+        <h2>The good stuff in your inbox</h2>
+        <p>News and updates from CH. No spam, we promise.</p>
+      </div>
+      <form class="footer__mailing mailing" method="post" action="https://echo.htmlacademy.ru">
+        <div class="mailing__input-wrapper">
+          <label for="mailing-id-email" class="mailing__label visually_hidden">Поле для ввода электронной почты</label>
+          <input class="mailing__input mailing__input-email" type="email" name="mailing-name-email" placeholder="Your E-mail" id="mailing-id-email" required="">
+        </div>
+        <button class="mailing__button-submit" type="submit">
+          <span>Sign Up</span>
+          <svg class="mailing__button-svg" width="29" height="9" viewBox="0 0 29 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite.svg#icon-shop-arrow"></use>
+          </svg>
+        </button>
+      </form>
+    </div>
+
+    <div class="footer__link-fields">
+      <ul class="footer__link-list">
+        <li class="footer__link-item">
+          <a href="#">Ordering & Payment</a>
+        </li>
+        <li class="footer__link-item">
+          <a href="#">Terms & Conditions</a>
+        </li>
+        <li class="footer__link-item">
+          <a href="#">Returns & Exchanges</a>
+        </li>
+        <li class="footer__link-item">
+          <a href="#">Delivery</a>
+        </li>
+      </ul>
+
+      <ul class="footer__link-list">
+        <li class="footer__link-item">
+          <a href="#">About CH</a>
+        </li>
+        <li class="footer__link-item">
+          <a href="#">Stores & Hours</a>
+        </li>
+        <li class="footer__link-item">
+          <a href="#">Jobs</a>
+        </li>
+        <li class="footer__link-item">
+          <a href="#">Contact Us</a>
+        </li>
+      </ul>
+
+      <ul class="footer__link-list footer__link-list--contact">
+        <li class="footer__link-item">
+          <a href="#">
+            <div class="footer__contact-img">
+              <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite.svg#icon-facebook"></use>
+              </svg>
+            </div>
+            <span>Facebook</span>
+          </a>
+
+        </li>
+        <li class="footer__link-item">
+          <a href="#">
+            <div class="footer__contact-img">
+              <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite.svg#icon-instagram"></use>
+              </svg>
+            </div>
+            <span>Instagram</span>
+          </a>
+
+        </li>
+        <li class="footer__link-item">
+          <a href="#">
+            <div class="footer__contact-img">
+              <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite.svg#icon-pinterest"></use>
+              </svg>
+            </div>
+            <span>Pinterest</span>
+          </a>
+
+        </li>
+        <li class="footer__link-item">
+          <a href="#">
+            <div class="footer__contact-img">
+              <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite.svg#icon-twitter"></use>
+              </svg>
+            </div>
+            <span>Twitter</span>
+          </a>
+
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<!--<script src="js/jquery/slick.min.js"></script>-->
+<script src="js/bundle.js"></script>
+</body>
+</html>

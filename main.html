@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Сайт "jewellery"</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="fonts/CormorantGaramond-Bold.woff2" rel="preload" as="font" crossorigin="anonymous">
+  <link href="fonts/CormorantGaramond-Regular-Italic.woff2" rel="preload" as="font" crossorigin="anonymous">
+  <link href="fonts/CormorantGaramond-SemiBold.woff2" rel="preload" as="font" crossorigin="anonymous">
+  <link href="fonts/Poppins-Bold.woff2" rel="preload" as="font" crossorigin="anonymous">
+  <link href="fonts/Poppins-Medium.woff2" rel="preload" as="font" crossorigin="anonymous">
+  <link href="fonts/Poppins-Regular.woff2" rel="preload" as="font" crossorigin="anonymous">
+</head>
+<body>
+<header class="header">
+  <div class="header__wrapper">
+    <button class="header__menu-switch" aria-label="Кнопка для открытия и закрытия меню">
+      <svg class="header__menu-icon" width="25" height="18" viewBox="0 0 25 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="img/sprite.svg#icon-menu-switch"></use>
+      </svg>
+    </button>
+    <form class="header__search search">
+      <label class="search__label" for="search-id">
+        <svg class="search__label-icon" width="14" height="14" viewBox="0 0 14 14" fill="" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="img/sprite.svg#icon-search"></use>
+        </svg>
+      </label>
+      <input class="search__input" type="search" name="search-name" id="search-id" placeholder="Type here to search">
+    </form>
+    <div class="header__logo">
+      <svg class="header__logo-icon" width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="img/sprite.svg#icon-logo-header"></use>
+      </svg>
+    </div>
+    <a href="login.html" class="header__login">Login</a>
+    <div class="header__cart-wrapper">
+
+      <a href="#" class="header__cart">
+        <svg class="header__cart-icon" width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="img/sprite.svg#icon-cart"></use>
+        </svg>
+        <span>Cart</span>
+      </a>
+      <span class="header__cart-counter">0</span>
+    </div>
+    <nav class="header__nav main-nav">
+      <ul class="main-nav__list main-nav__list-first">
+        <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">What’s new</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="#">Chokers</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="#">Necklaces</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="#">Rings</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="#">Earrings</a></li>
+      </ul>
+
+      <ul class="main-nav__list main-nav__list-second">
+        <li class="main-nav__item"><a class="main-nav__link" href="#">About CH</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="#">Stores & Hours</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+  </div>
+
+</header>
+
+<main class="main">
+  <h1 class="visually_hidden">Сайт "jewellery"</h1>
+  <section class="promo">
+    <h2 class="visually_hidden">Promo</h2>
+    <div class="promo__wrapper">
+      <div class="promo__slogan">
+        <p class="promo__heading">PERFECTION</p>
+        <p class="promo__text">made to be yours</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="shop">
+    <div class="shop__wrapper">
+      <div class="shop__header">
+        <h2 class="shop__heading">New In</h2>
+      </div>
+
+      <div class="shop__switch">
+        <button type="button" class="shop__arrow shop__arrow--prev slick-prev">
+          <svg class="shop__arrow-svg" width="40" height="11" viewBox="0 0 29 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite.svg#icon-shop-arrow"></use>
+          </svg>
+        </button>
+
+        <button type="button" class="shop__arrow shop__arrow--next slick-next slick-arrow">
+          <svg class="shop__arrow-svg" width="29" height="9" viewBox="0 0 29 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite.svg#icon-shop-arrow"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="shop__promo">
+        <a href="#" class="shop__slogan">Shop Now</a>
+      </div>
+
+      <div class="shop__field">
+
+        <div class="shop__lot-wrapper">
+          <div class="shop__lot shop__lot--1">
+            <div class="shop__lot-img">
+              <picture class="shop__picture">
+                <source type="image/webp" srcset="img/shop-img/lot-1-desk_1x.webp 1x, img/shop-img/lot-1-desk_2x.webp 2x">
+                <!-- 1х: 270px; 2x: 540px -->
+                <img src="img/shop-img/lot-1-desk_1x.jpg" srcset="img/shop-img/lot-1-desk_2x.jpg 2x" width="270" height="540" alt="Изображение товара">
+              </picture>
+            </div>
+            <div class="shop__lot-heading">Necklace with amethyst</div>
+            <div class="shop__lot-price">
+              <span class="shop__lot-currency">$</span>
+              <span class="shop__lot-amount">145</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="shop__lot-wrapper">
+          <div class="shop__lot shop__lot--2">
+            <div class="shop__lot-img">
+              <picture class="shop__picture">
+                <source type="image/webp" srcset="img/shop-img/lot-2-desk_1x.webp 1x, img/shop-img/lot-2-desk_2x.webp 2x">
+                <!-- 1х: 270px; 2x: 540px -->
+                <img src="img/shop-img/lot-2-desk_1x.jpg" srcset="img/shop-img/lot-2-desk_2x.jpg 2x" width="270" height="540" alt="Изображение товара">
+              </picture>
+            </div>
+            <div class="shop__lot-heading">Layered сhoker</div>
+            <div class="shop__lot-price">
+              <span class="shop__lot-currency">$</span>
+              <span class="shop__lot-amount">115</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="shop__lot-wrapper">
+          <div class="shop__lot shop__lot--3">
+            <div class="shop__lot-img">
+              <picture class="shop__picture">
+                <source type="image/webp" srcset="img/shop-img/lot-3-desk_1x.webp 1x, img/shop-img/lot-3-desk_2x.webp 2x">
+                <!-- 1х: 270px; 2x: 540px -->
+                <img src="img/shop-img/lot-3-desk_1x.jpg" srcset="img/shop-img/lot-3-desk_2x.jpg 2x" width="270" height="540" alt="Изображение товара">
+              </picture>
+            </div>
+            <div class="shop__lot-heading">Gold chain</div>
+            <div class="shop__lot-price">
+              <span class="shop__lot-currency">$</span>
+              <span class="shop__lot-amount">215</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="shop__lot-wrapper">
+          <div class="shop__lot shop__lot--4">
+            <div class="shop__lot-img">
+              <picture class="shop__picture">
+                <source type="image/webp" srcset="img/shop-img/lot-4-desk_1x.webp 1x, img/shop-img/lot-4-desk_2x.webp 2x">
+                <!-- 1х: 270px; 2x: 540px -->
+                <img src="img/shop-img/lot-4-desk_1x.jpg" srcset="img/shop-img/lot-4-desk_2x.jpg 2x" width="270" height="540" alt="Изображение товара">
+              </picture>
+            </div>
+            <div class="shop__lot-heading">Galaxy earrings</div>
+            <div class="shop__lot-price">
+              <span class="shop__lot-currency">$</span>
+              <span class="shop__lot-amount">95</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="shop__pagination pagination">
+        <div class="pagination__wrapper">
+          <div class="pagination__number pagination__number--1 pagination__number--active"><span>1</span></div>
+          <div class="pagination__number pagination__number--2"><span>2</span></div>
+          <div class="pagination__number pagination__number--3"><span>3</span></div>
+          <div class="pagination__separator"><span>of</span></div>
+          <div class="pagination__number pagination__number--4"><span>4</span></div>
+          <div class="pagination__number pagination__number--5"><span>5</span></div>
+          <div class="pagination__number pagination__number--6"><span>6</span></div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="blog">
+
+    <h2 class="blog__heading">Blog</h2>
+
+    <div class="blog__link-main">
+      <a href="#">Read All</a>
+    </div>
+
+    <div class="blog__field">
+      <div class="blog__wrapper-items">
+        <div class="blog__item blog__item--img-care">
+          <div class="blog__item-content">
+            <div class="blog__item-date">
+              <p>September 30, 2019</p>
+            </div>
+
+            <div class="blog__item-heading">
+              <h3>How to care for your jewellery</h3>
+            </div>
+
+            <div class="blog__item-link">
+              <a href="#">Read Article</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="blog__item blog__item--img-power">
+          <div class="blog__item-content">
+            <div class="blog__item-date">
+              <p>September 23, 2019</p>
+            </div>
+
+            <div class="blog__item-heading">
+              <h3>Power of crystals</h3>
+            </div>
+
+            <div class="blog__item-link">
+              <a href="#">Read Article</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="blog__item blog__item--img-trends">
+        <div class="blog__item-content">
+          <div class="blog__item-date">
+            <p>September 16, 2019</p>
+          </div>
+
+          <div class="blog__item-heading">
+            <h3>AW 19 trends</h3>
+          </div>
+
+          <div class="blog__item-link">
+            <a href="#">Read Article</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq">
+    <div class="faq__header">
+      <h2>Frequently asked questions</h2>
+    </div>
+
+    <div class="faq__field">
+      <div class="faq__item faq__item--first">
+        <div class="faq__item-header">
+          <div class="faq__item-heading">
+            <h4>What materials are the jewellery made of?</h4>
+          </div>
+
+          <div class="faq__item-switch">
+
+          </div>
+        </div>
+        <div class="faq__item-content">
+          <p>Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and semiprecious stones and crystals.</p>
+        </div>
+      </div>
+
+      <div class="faq__item faq__item--second">
+        <div class="faq__item-header">
+          <div class="faq__item-heading">
+            <h4>Which countries do you deliver to?</h4>
+          </div>
+
+          <div class="faq__item-switch">
+
+          </div>
+        </div>
+        <div class="faq__item-content">
+          <p>Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and semiprecious stones and crystals.</p>
+        </div>
+      </div>
+
+      <div class="faq__item faq__item--close faq__item--third">
+        <div class="faq__item-header">
+          <div class="faq__item-heading">
+            <h4>What are the payment methods?</h4>
+          </div>
+
+          <div class="faq__item-switch">
+
+          </div>
+        </div>
+        <div class="faq__item-content">
+          <p>Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and semiprecious stones and crystals.</p>
+        </div>
+      </div>
+
+      <div class="faq__item faq__item--close faq__item--fourth">
+        <div class="faq__item-header">
+          <div class="faq__item-heading">
+            <h4><span>Can I return the</span><span>jewellery if it didn’t fit&nbsp;me?</span></h4>
+          </div>
+
+          <div class="faq__item-switch">
+
+          </div>
+        </div>
+        <div class="faq__item-content">
+          <p>Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and semiprecious stones and crystals.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="follow">
+    <div class="follow__header">
+      <div class="follow__heading">
+        <h2>@Chjewellery</h2>
+      </div>
+      <div class="follow__header-link">
+        <a href="#">Follow Us</a>
+      </div>
+    </div>
+
+    <div class="follow__field">
+      <div class="follow__item follow__item--1"><a href="#"></a></div>
+      <div class="follow__item follow__item--2"><a href="#"></a></div>
+      <div class="follow__item follow__item--3"><a href="#"></a></div>
+      <div class="follow__item follow__item--4"><a href="#"></a></div>
+      <div class="follow__item follow__item--5"><a href="#"></a></div>
+      <div class="follow__item follow__item--6"><a href="#"></a></div>
+      <div class="follow__item follow__item--7"><a href="#"></a></div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__wrapper">
+    <div class="footer__header">
+      <div class="footer__heading">
+        <h2>The good stuff in your inbox</h2>
+        <p>News and updates from CH. No spam, we promise.</p>
+      </div>
+      <form class="footer__mailing mailing" method="post" action="https://echo.htmlacademy.ru">
+        <div class="mailing__input-wrapper">
+          <label for="mailing-id-email" class="mailing__label visually_hidden">Поле для ввода электронной почты</label>
+          <input class="mailing__input mailing__input-email" type="email" name="mailing-name-email" placeholder="Your E-mail" id="mailing-id-email" required="">
+        </div>
+        <button class="mailing__button-submit" type="submit">
+          <span>Sign Up</span>
+          <svg class="mailing__button-svg" width="29" height="9" viewBox="0 0 29 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite.svg#icon-shop-arrow"></use>
+          </svg>
+        </button>
+      </form>
+    </div>
+
+    <div class="footer__link-fields">
+      <ul class="footer__link-list">
+        <li class="footer__link-item">
+          <a href="#">Ordering & Payment</a>
+        </li>
+        <li class="footer__link-item">
+          <a href="#">Terms & Conditions</a>
+        </li>
+        <li class="footer__link-item">
+          <a href="#">Returns & Exchanges</a>
+        </li>
+        <li class="footer__link-item">
+          <a href="#">Delivery</a>
+        </li>
+      </ul>
+      <ul class="footer__link-list">
+        <li class="footer__link-item">
+          <a href="#">About CH</a>
+        </li>
+        <li class="footer__link-item">
+          <a href="#">Stores & Hours</a>
+        </li>
+        <li class="footer__link-item">
+          <a href="#">Jobs</a>
+        </li>
+        <li class="footer__link-item">
+          <a href="#">Contact Us</a>
+        </li>
+      </ul>
+      <ul class="footer__link-list footer__link-list--contact">
+        <li class="footer__link-item">
+          <a href="#">
+            <div class="footer__contact-img">
+              <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite.svg#icon-facebook"></use>
+              </svg>
+            </div>
+            <span>Facebook</span>
+          </a>
+
+        </li>
+        <li class="footer__link-item">
+          <a href="#">
+            <div class="footer__contact-img">
+              <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite.svg#icon-instagram"></use>
+              </svg>
+            </div>
+            <span>Instagram</span>
+          </a>
+        </li>
+        <li class="footer__link-item">
+          <a href="#">
+            <div class="footer__contact-img">
+              <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite.svg#icon-pinterest"></use>
+              </svg>
+            </div>
+            <span>Pinterest</span>
+          </a>
+        </li>
+        <li class="footer__link-item">
+          <a href="#">
+            <div class="footer__contact-img">
+              <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite.svg#icon-twitter"></use>
+              </svg>
+            </div>
+            <span>Twitter</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<section class="popup popup--close" id="popup">
+  <div class="popup__wrapper">
+    <div class="popup__button-wrapper">
+      <button class="popup__button popup__button-close" type="button">
+        <svg class="popup__cross" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="img/sprite.svg#icon-cross"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="popup__area">
+      <div class="popup__header">
+        <div class="popup__heading">
+          <h3>The item was added to your cart</h3>
+        </div>
+      </div>
+      <form class="popup__body" method="post" action="https://echo.htmlacademy.ru">
+        <div class="popup__product">
+          <div class="popup__product-img"></div>
+          <div class="popup__product-info">
+            <div class="popup__product-header">
+              <h4>Gold Necklace</h4>
+            </div>
+            <div class="popup__product-price">
+              <div class="popup__product-currency">
+                <span>$</span>
+              </div>
+              <div class="popup__product-amount">
+                <span>115</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="popup__quantity">
+          <button class="popup__button popup__button-sign popup__button--plus" type="button">
+            <svg class="popup__plus" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#icon-plus"></use>
+            </svg>
+          </button>
+          <div class="popup__quantity-place">
+            <label for="popup__quantity-place-id" class="popup__label visually_hidden">Поле для количества наименований товара</label>
+            <input title="Введите количество товаров которое вы хотите купить" type="text" name="popup__quantity-place-name" placeholder="1" id="popup__quantity-place-id" minlength="1">
+          </div>
+          <button class="popup__button popup__button-sign popup__button--minus" type="button">
+            <svg class="popup__plus" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#icon-minus"></use>
+            </svg>
+          </button>
+        </div>
+      </form>
+    </div>
+    <div class="popup__footer">
+      <div class="popup__cart-info">
+        <div class="popup__cart-number">
+          <p>You have <span>1</span> item in the cart</p>
+        </div>
+        <div class="popup__cart-cost">
+          <p>Cart subtotal: $ <span>115</span></p>
+        </div>
+      </div>
+      <div class="popup__footer-buttons">
+        <a href="catalog.html" class="popup__button popup__shopping">Continue shopping</a>
+        <a href="#" class="popup__button popup__checkout">Checkout</a>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section class="login login--close" id="login">
+  <div class="login__wrapper">
+    <div class="login__button-wrapper">
+      <button class="login__button login__button-close" type="button">
+        <svg class="login__cross" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="img/sprite.svg#icon-cross"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="login__area">
+      <div class="login__header">
+        <div class="login__heading">
+          <h3>Log In</h3>
+        </div>
+
+      </div>
+      <form class="login__body" method="post" action="https://echo.htmlacademy.ru">
+        <div class="login__user-wrapper">
+          <div class="login__field">
+            <label for="login-id-email" class="login__label visually_hidden">Поле для ввода электронной почты</label>
+            <input class="login__input login__input-email" type="email" name="login-name-email" placeholder="Your E-mail" id="login-id-email" required="">
+          </div>
+
+          <div class="login__field login__field-password">
+            <label for="login-id-password" class="visually_hidden">Поле для ввода телефона</label>
+            <input type="password" name="login-name-password" placeholder="Password" id="login-id-password" required="">
+            <div class="login__password-link">
+              <a href="#">Forgot your password?</a>
+            </div>
+          </div>
+        </div>
+        <button class="login__button-submit" type="submit" aria-label="Нажмите для того что бы мы смогли с вами связаться">
+          Log In
+        </button>
+      </form>
+      <div class="login__footer">
+        <div class="login__footer-text">
+          <p>Don’t have an account?</p>
+        </div>
+        <div class="login__footer-link">
+          <a href="#">Sign up</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<!--<script src="js/jquery/slick.min.js"></script>-->
+<script src="js/bundle.js"></script>
+
+</body>
+</html>
